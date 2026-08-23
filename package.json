@@ -1,0 +1,31 @@
+{
+  "name": "receipts",
+  "version": "0.1.0",
+  "description": "A read-only auditor for AI instruction piles. Measures load cost, precedence conflicts, and which rules carry no receipt.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "receipts": "./bin/receipts.ts"
+  },
+  "files": [
+    "bin",
+    "src",
+    "SPEC.md",
+    "README.md"
+  ],
+  "scripts": {
+    "receipts": "node bin/receipts.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "fixtures": "node scripts/fixtures.ts",
+    "verify": "npm run typecheck && npm run test && npm run fixtures"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

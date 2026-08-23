@@ -1,0 +1,19 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Generated reports never land inside a repo under audit (SPEC.md §4)
+out/
+*.report.txt
+*.report.json
+
+# Fixture binary, generated on demand by fixtures/broken-repo/SETUP.md
+fixtures/broken-repo/blob.bin
+
+.env
+.env.*
+*.log
+.DS_Store
+
+# Claude Code harness scratch state
+.claude/.cc-writes/
