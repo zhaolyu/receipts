@@ -15,6 +15,7 @@ Status: **v0 in progress.** `npm run verify` = typecheck + unit tests + fixture 
 - `ROADMAP.md` holds the post-v0 evolution path. v0 scope is closed; ideas land
   there, not in the build.
 
+
 <!-- forge-agent-baseline:v1 begin -->
 ## Forge agent baseline
 
